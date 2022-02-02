@@ -7,6 +7,8 @@ public class Main {
 
     static ArrayList<Food> food = new ArrayList<>();
 
+    // TO-DO create your array
+
     public static void main(String[] args) {
 
 
@@ -15,12 +17,16 @@ public class Main {
        food.add(new Food("Hot wings", "Spicy"));
        food.add(new Food("Ice Cream", "Sweet"));
        food.add(new Food("Sour Gummies", "Sour"));
+
+       // TO-DO add to your array
         
         Javalin app = Javalin.create().start(4100);
 
         app.get("/", ctx -> ctx.render("index.jte"));
 
         app.get("/food", foodHandler);
+
+        // TO-DO create routes
 
     }
 
@@ -29,6 +35,8 @@ public class Main {
         ctx.render("food.jte", Collections.singletonMap("food", food));
 
     };
+
+    // TO-DO create handler
 
 
 }
