@@ -7,6 +7,7 @@
 <body>
 
 <a href="/food">Food</a>
+<a href="/seaCreatures">Sea Creatures</a>
 
 </body>
 </html>

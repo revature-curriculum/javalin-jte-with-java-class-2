@@ -1,4 +1,4 @@
-## JTE with Java Classes 3: Adding if Statements
+## JTE with Java Classes 3: Adding if Statements Answer
 ---
 ### Description
 In this lab we will cover how to iterate through an ArrayList of Java Objects using JTE while using an if statement to further filter the text shown. See the food implementation for reference.
