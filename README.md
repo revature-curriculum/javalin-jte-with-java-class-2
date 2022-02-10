@@ -6,13 +6,20 @@ In this lab we will cover how to iterate through an ArrayList of Java Objects us
 ---
 ### Steps
 
-1. In src -> main -> java -> objects, add your fields and getters to your SeaCreature.java file. Make sure to have at least 3 fields in this file, including size.
-2. Create methods in this new class that return size and name of the creature
-2. In src -> main -> java -> Main.java, create an ArrayList of SeaCreature objects. Add at least 4 SeaCreature objects to your list.
-3. In the same file, create a new route and handler for your list of SeaCreature objects.
-4. In src -> main -> jte, add your implementation in the seaCreature.jte file where you will iterate through your list with a for loop. Make sure to add the imports and parameters required. Add your for loop inside the body tag.
-5. In the for loop add if statements to check the size of the sea creature. Display different text based on the size and filters through the if statement.
 
+1. In src -> main -> java -> objects -> SeaCreature.java add at least two fields. One should be the name of the animal, and another the size of the animal. You can add more if you want.
+2. Create a constructor for the class.
+3. Create getters for all the fields. These getters should be public so other files can access them.
+4. In src -> main -> java -> Main.java, create an ArrayList of SeaCreature objects. This arraylist should be static and be created outside the main method.
+5. Add at least 4 SeaCreature objects to your list. This should be done in the main method. See the ShoppingItems reference example in the same file.
+6. Create a handler that will render seaCreatures.jte and send it your list of SeaCreature objects.
+7. Create a route for the handler.
+8. In src -> main -> jte -> seaCreatures.jte add the required imports and parameters.
+    * Remember to import java.util.* for the arraylist.
+    * Remember to use the same name for the parameter and the key for the singletonMap.
+9. Create a for loop inside the body tags. This for loop should iterate through all the sea creatures.
+10. In the for loop add an if statement that checks the size of the sea creature. Display different text based on the size and filters through the if statement.
+    * You can look at the lesson example or the food.jte file for reference.
 
 ---
 ### Sample Output
